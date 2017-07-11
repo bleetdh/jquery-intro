@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Back to jQuery</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class='container'>
+    <h1 class="jumbotron">Lake Arrowhead Homes For Sale</h1>
+
+    <form action="#" method="post">
+
+      <div class='form-group'>
+        <label for="address">Address</label>
+        <input id="address" type="text" name="address" value="" placeholder="type your address">
+      </div>
+
+      <div class='form-group'>
+        <label for="sqft">Sq. Ft</label>
+        <input id="sqft" type="text" name="sqft" value="" placeholder="type your sq ft">
+      </div>
+
+      <div class='form-group'>
+        <label for="bedrooms">Bedrooms #</label>
+        <input id="bedrooms" type="text" name="bedrooms" value="" placeholder="type your bedroom #">
+      </div>
+
+      <div class='form-group'>
+        <label for="baths">Bathrooms #</label>
+        <input id="baths" type="text" name="baths" value="" placeholder="type your bathroom #">
+      </div>
+
+      <div class='form-group'>
+        <label for="price">Price</label>
+        <input id="price" type="text" name="price" value="" placeholder="type your price">
+      </div>
+
+      <!-- <input type="submit" name="" value="Submit">
+    <button type="submit" name="button">Submit!</button> -->
+
+      <button id="addHome" class="btn btn-primary">Add Home</button>
+    </form>
+
+    <br>
+
+    <table id="homes" class="table">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Sq. Ft.</th>
+          <th>Bedrooms</th>
+          <th>Baths</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>27374 Matterhorn Drive</td>
+          <td>1,664</td>
+          <td>3</td>
+          <td>2</td>
+          <td>$279,500</td>
+          <td><button class="btn btn-xs btn-danger removeHome">Remove</button></td>
+        </tr>
+        <tr>
+          <td>243 El Dorado</td>
+          <td>4,900</td>
+          <td>6</td>
+          <td>6.5</td>
+          <td>$990,000</td>
+          <td><button class="btn btn-xs btn-danger removeHome">Remove</button></td>
+        </tr>
+        <tr>
+          <td>1228 Klondike Drive</td>
+          <td>2,158</td>
+          <td>4</td>
+          <td>2.5</td>
+          <td>$400,000</td>
+          <td><button class="btn btn-xs btn-danger removeHome">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id='addHome'>add home</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
